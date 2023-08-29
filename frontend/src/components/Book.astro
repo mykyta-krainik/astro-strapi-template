@@ -1,0 +1,26 @@
+---
+import type Book from '../interfaces/Book';
+
+type Props = Book['attributes'];
+
+const { title, description, rating, publicationYear, author } =
+  Astro.props;
+---
+
+<div class='py-4 px-6 border rounded flex items-left flex-col mb-2'>
+  <h2 class='mb-2 text-2xl text-center'>{title}</h2>
+ 
+  <p>
+    Author: <span class='font-bold'>{author}</span>
+  </p>
+
+  <p>
+    Year: <span class='font-bold'>{publicationYear}</span>
+  </p>
+
+        <p>
+      Rate:
+      <span style={{ fontWeight: 'bold' }}>{rating}</span>
+    </p>
+    <p>{description}</p>
+</div>

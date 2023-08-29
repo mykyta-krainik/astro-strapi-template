@@ -1,0 +1,23 @@
+{
+  "name": "astro-strapi-template",
+  "version": "1.0.0",
+  "description": "Template for astro-strapi projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd backend && npm run develop\" \"cd frontend && npm run dev\"",
+    "install": "concurrently \"cd backend && npm install\" \"cd frontend && npm install\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mykyta-krainik/astro-strapi-template.git"
+  },
+  "author": "Mykyta Krainik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mykyta-krainik/astro-strapi-template/issues"
+  },
+  "homepage": "https://github.com/mykyta-krainik/astro-strapi-template#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
